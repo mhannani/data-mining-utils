@@ -1,7 +1,9 @@
 # Distance between binary images binary images/
 import numpy as np
 from distance.euclidean import euclidean
-A1 = np.array([[1, 2, 3, 4, 5],[1, 2, 3, 4, 5]])
-A2 = np.array([[1, 2, 3, 4, 5],[1, 2, 3, 4, 5]])
+from distance.minkowski import minkowski
+A1 = np.array([[1, 4, 3, 4, 5], [1, 5, 3, 4, 5]])
+A2 = np.array([[1, 2, 3, 4, 5], [1, 2, 3, 4, 5]])
 
-print(euclidean(A1, A2))
+# print(euclidean(A1, A2))
+print(minkowski(A1, A2, 5))
