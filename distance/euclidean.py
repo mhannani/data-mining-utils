@@ -17,7 +17,7 @@ def euclidean(u, v):
         flat_u = u.flatten()
         flat_v = v.flatten()
 
-    dist += sqrt(sum([pow((u_i - v_i), 2) for u_i, v_i in zip(flat_u, flat_v)]))
+    dist += sqrt(sum([pow((int(u_i) - int(v_i)), 2) for u_i, v_i in zip(flat_u, flat_v)]))
 
     return dist
 

@@ -16,6 +16,6 @@ def manhattan(u, v):
         flat_v = v.flatten()
 
     for u_i, v_i in zip(flat_u, flat_v):
-        dist += sum([abs(u_i - v_i)])
+        dist += sum([abs(int(u_i) - int(v_i))])
 
     return dist

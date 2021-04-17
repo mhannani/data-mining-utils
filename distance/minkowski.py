@@ -22,5 +22,5 @@ def minkowski(u, v, p):
         flat_u = u.flatten()
         flat_v = v.flatten()
 
-    dist += pow((sum([pow((u_i - v_i), p) for u_i, v_i in zip(flat_u, flat_v)])), 1/p)
+    dist += pow((sum([pow((int(u_i) - int(v_i)), p) for u_i, v_i in zip(flat_u, flat_v)])), 1/p)
     return dist
