@@ -9,6 +9,8 @@ def manhattan(u, v):
     :return: the manhattan distance
     """
     dist = 0
+    (X_train, y_train), (X_test, y_test) = keras.datasets.cifar10.load_data()
+
     if not isinstance(u, np.ndarray) or not isinstance(v, np.ndarray):
         raise ValueError('Please provide two ndarray !')
     else:
