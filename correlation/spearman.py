@@ -14,8 +14,8 @@ def spearman_method_process(df):
     iq = df['IQ']
     n = len(iq)
     tv_per_hour = df['tv per hour']
-    x_rank = rankdata(iq)
-    y_rank = rankdata(tv_per_hour)
+    x_rank = len(iq) - rankdata(iq) + 1
+    y_rank = len(tv_per_hour) - rankdata(tv_per_hour) + 1
     df['x rank'] = x_rank
     df['y rank'] = y_rank
     df['d'] = x_rank - y_rank
@@ -31,8 +31,8 @@ def my_spearman(x, y):
     Calculate the spearman coefficient of the x and y.
     """
     # Rank each x and y
-    x_rank = rankdata(x)
-    y_rank = rankdata(y)
+    x_rank = rankdata(x, method='min')
+    y_rank = rankdata(y, method='min')
 
     rho_s = my_pearson(x_rank, y_rank)
 
