@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def my_pearson(x, y):
     """
     Compute the pearson's coefficient of the given data.
