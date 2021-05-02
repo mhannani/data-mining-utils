@@ -53,7 +53,7 @@ class Correlation:
         return df, rho
 
     @staticmethod
-    def my_spearman(self, x, y):
+    def spearman(x, y):
         """
         Calculate the spearman coefficient of the x and y.
         """
@@ -61,6 +61,6 @@ class Correlation:
         x_rank = rankdata(x, method='min')
         y_rank = rankdata(y, method='min')
 
-        rho_s = self.pearson(x_rank, y_rank)
+        rho_s = Correlation.pearson(x_rank, y_rank)
 
         return rho_s

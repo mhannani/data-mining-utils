@@ -5,7 +5,7 @@ def scatter_it(x, y, x_label, y_label):
     """
     plot a scatter plot of the provided data.
     params:
-    x: x-axis 
+    x: x-axis
     y: y-axis
     x_label: x-label of the scatter plot
     y_label: y-label of the scatter plot
