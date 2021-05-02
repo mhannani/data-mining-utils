@@ -1,4 +1,5 @@
 from math import sqrt, pow
+import numpy as np
 
 
 class Distances:
