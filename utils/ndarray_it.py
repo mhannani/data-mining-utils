@@ -22,7 +22,6 @@ def ndarray_it(f_img):
     # an ndarray
     elif isinstance(f_img, np.ndarray):
         ndarray = f_img
-
     else:
         raise Exception('Please provide an ndarray, a path or a python list')
 

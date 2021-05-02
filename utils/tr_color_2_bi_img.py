@@ -20,19 +20,37 @@ def tr_color_2_bi_img(f_img, threshold):
         and 0(black) otherwise.
     :return: an array-like with 0 and 1 values as a binary representation of the image.
     """
+    # # initialisation
+    # height, width = 1, 1
 
     # convert the path/image into ndarray
     rgb_img = ndarray_it(f_img)
 
     # convert the image to gray scale
-    gray_scaled_img = tr_2_gr_scale(rgb_img)
+    if rgb_img.ndim == 3:
+        gray_scaled_img = tr_2_gr_scale(rgb_img)
+    else:
+        gray_scaled_img = rgb_img
 
     # get the image's information
-    height, width, channels = rgb_img.shape
+    if rgb_img.ndim == 3:
+
+        height, width, channels = rgb_img.shape
+    elif rgb_img.ndim == 2:
+
+        height, width = rgb_img.shape
+    elif rgb_img.ndim == 1:
+        # convert the array into 2-D array
+        gray_scaled_img = np.atleast_2d(gray_scaled_img)
+        width = rgb_img.shape[0]
+        height = 1
+    else:
+        raise Exception('Please provide at least 3-D array')
 
     # binary array
     binary_img = np.zeros((height, width))
 
+    # check if the array is at least
     # threshold each pixel
     for i in np.arange(height):
         for j in np.arange(width):

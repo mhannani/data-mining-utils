@@ -1,15 +1,18 @@
 import numpy as np
 
 
-def validate_vector(u):
+def validate_vector(u, flatten=True):
     """
-    Validator of a vector.
+    Validate and/or flatten a vector.
     :param u: array_like
         An array to be checked and/or converted.
+    :param flatten: boolean
+        A boolean to specify whether the array should be flattened or not.
     :return: 1-D array
         An 1-D array
     """
 
     u = np.asarray(u)
-    u = u.flatten()
+    if flatten:
+        u = u.flatten()
     return u
