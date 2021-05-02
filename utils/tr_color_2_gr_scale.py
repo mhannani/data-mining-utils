@@ -1,5 +1,5 @@
 import numpy as np
-from ndarray_it import ndarray_it
+from .ndarray_it import ndarray_it
 
 
 def tr_2_gr_scale(f_img):
