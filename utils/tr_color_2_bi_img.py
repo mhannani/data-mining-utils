@@ -20,8 +20,6 @@ def tr_color_2_bi_img(f_img, threshold):
         and 0(black) otherwise.
     :return: an array-like with 0 and 1 values as a binary representation of the image.
     """
-    # # initialisation
-    # height, width = 1, 1
 
     # convert the path/image into ndarray
     rgb_img = ndarray_it(f_img)
@@ -50,7 +48,6 @@ def tr_color_2_bi_img(f_img, threshold):
     # binary array
     binary_img = np.zeros((height, width))
 
-    # check if the array is at least
     # threshold each pixel
     for i in np.arange(height):
         for j in np.arange(width):

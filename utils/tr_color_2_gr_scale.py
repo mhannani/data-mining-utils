@@ -21,6 +21,7 @@ def tr_2_gr_scale(f_img):
     :return:
         An array of gray-scaled representing the image.
     """
+
     # ITU-R BT.601 conversion values
     y = [0.299, 0.587, 0.114]
 

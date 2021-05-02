@@ -27,6 +27,8 @@ def jaccard(u, v, as_binary=True):
     # Check the vector validity or convert it into vector
     u = validate_vector(u, flatten=False)
     v = validate_vector(v, flatten=False)
+
+    # convert array into binary
     if as_binary:
         # check if the array contains only binary elements(`0`, `1`, `True` or 'False`)
         u_is_bi = np.array_equal(u, u.astype(bool))
@@ -44,6 +46,7 @@ def jaccard(u, v, as_binary=True):
 
     # True positive count
     m_11 = np.double(np.bitwise_and(u, v).sum())
+
     # True positive and False positive and True negative count
     m_01__m_10__m_11 = np.double(np.bitwise_or(u, v).sum())
 
