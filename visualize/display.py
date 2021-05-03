@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-
 from utils.split_nbr import split_nbr
 
 
