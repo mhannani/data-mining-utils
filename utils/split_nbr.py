@@ -1,6 +1,10 @@
 def split_nbr(number):
     """
     Split the given number into the multiplication of two numbers evenly weighted.
+    :param number: integer
+        A number to split into multiplication of two numbers.
+    :return tuple
+        Tuple of two numbers.
     """
     # if we don't pass to the other greater number `number + 1`
     not_it = False

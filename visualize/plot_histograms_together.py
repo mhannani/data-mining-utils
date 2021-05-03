@@ -2,10 +2,12 @@ from histogram.calculate_histogram import calculate_histogram
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 def plot_histograms_together(img):
     """
     plot three histogram at the same figure of the three color channel.
     :param img: an image or path of image.
+    :return None.
     """
     colors = ['red', 'green', 'blue']
     channel = ' channel'

@@ -11,6 +11,10 @@ class Correlation:
     def pearson(x, y):
         """
         Compute the pearson's coefficient of the given data.
+        :param x: array_like
+            Array of features.
+        :param y: array_like
+            Array of labels.
         """
 
         # Calculate the mean of x and y
@@ -33,9 +37,9 @@ class Correlation:
     def spearman_method_process(df):
         """
         Spearman rank correlation process.
-        :params
-        df: the dataframe
-        return: dataframe and rho value.
+        :param df: Dataframe_like
+        :return: tuple
+            Tuple of dataframe and rho value.
         """
 
         iq = df['IQ']

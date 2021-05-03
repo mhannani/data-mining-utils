@@ -3,13 +3,13 @@ import matplotlib.pyplot as plt
 
 def scatter_it(x, y, x_label, y_label):
     """
-    plot a scatter plot of the provided data.
-    params:
-    x: x-axis
-    y: y-axis
-    x_label: x-label of the scatter plot
-    y_label: y-label of the scatter plot
-    return: NULL
+    Plot a scatter plot of the provided data.
+
+    :param x: array_like
+    :param y: array_like
+    :param x_label: x-label of the scatter plot
+    :param y_label: y-label of the scatter plot
+    :return: None
     """
 
     fig, ax1 = plt.subplots()

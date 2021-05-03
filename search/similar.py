@@ -8,19 +8,19 @@ class Similar:
     """
     Encapsulates some helper function to search for similar images from a set of images
     """
+
     @staticmethod
     def search_n_similar_images(images, image, n):
         """
         Find similar images of the given one.
 
         :param images: array_like
-            array of images
+            Array of images
         :param image: array_like
             An image to search for its similar
         :param n: integer
-            number of first similar to yield.
-        :return:
-            Tuple
+            Number of first similar to yield.
+        :return: tuple
             A tuple of containing similar images of image given as argument and their spearman correlation value.
         """
 
@@ -75,13 +75,12 @@ class Similar:
         Find similar images of the given one by minimizing the difference of their histogram.
 
         :param images: array_like
-            array of images
+            Array of images
         :param image: array_like
             An image to search for its similar
         :param n: integer
-            number of first similar to yield.
-        :return:
-            Tuple
+            Number of first similar to yield.
+        :return: tuple
             A tuple of containing similar images of image given as argument and their histogram difference value.
         """
 

@@ -5,11 +5,14 @@ import numpy as np
 
 def compare_img_hist(img_1, img_2):
     """
-    Campare two RGB images using histogram.
-    :param img_1: array-like image.
-    :param img_2: array-liek image.
+    Compare two RGB images using histogram.
+
+    :param img_1: array_like.
+        An array representing the image.
+    :param img_2: array_like.
+        An array representing the image.
     :return integer
-        difference between histogram
+        Difference between histogram
     """
 
     # We will do that just for gray-scale images to make things easier

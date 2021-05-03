@@ -18,7 +18,7 @@ def tr_2_gr_scale(f_img):
 
     :param f_img: string
         The path of the image to convert to gray-scale one.
-    :return:
+    :return: array_like
         An array of gray-scaled representing the image.
     """
 

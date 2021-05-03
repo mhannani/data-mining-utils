@@ -18,7 +18,8 @@ def tr_color_2_bi_img(f_img, threshold):
     :param threshold: integer
         An integer to use as threshold for to shift value greater than it ot 1(white)
         and 0(black) otherwise.
-    :return: an array-like with 0 and 1 values as a binary representation of the image.
+    :return: an array-like
+        Array with 0 and 1 values as a binary representation of the image.
     """
 
     # convert the path/image into ndarray

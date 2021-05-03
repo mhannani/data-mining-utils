@@ -5,13 +5,12 @@ from utils.split_nbr import split_nbr
 def display_similar_images(x, y, nbr_imgs):
     """
     Display similar images of our data.\
-    :params
-    :X dataframe-like of data.
+    :param x: dataframe_like
         Data with each pixel of the instances.
-    :n_row integer
-        Number of rows of the subplot.
-    :n_col integer
-        Number of cols of the subplot.
+    :param y: array_like
+        array of labels.
+    :param nbr_imgs integer
+        Number of images to display.
     """
     # compute the number of rows and columns
     fig = plt.figure(figsize=(18, 10))

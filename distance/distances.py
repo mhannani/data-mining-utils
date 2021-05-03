@@ -15,6 +15,7 @@ class Distances:
         :param v: The second as ndarray.
         :return: The euclidean distance.
         """
+
         dist = 0
         # if the the dimensional representation of the image is an ndarray
         if not isinstance(u, np.ndarray) or not isinstance(v, np.ndarray):
@@ -35,6 +36,7 @@ class Distances:
         :param v: ndarray-like
         :return: the manhattan distance
         """
+
         dist = 0
 
         if not isinstance(u, np.ndarray) or not isinstance(v, np.ndarray):
@@ -57,6 +59,7 @@ class Distances:
         :param p: scalar
         :return: The minkowski distance
         """
+
         dist = 0
         if p < 1:
             raise ValueError('p must be at least 1')

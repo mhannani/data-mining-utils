@@ -6,7 +6,7 @@ def calculate_histogram(img, channel):
     Calculates the histogram of a given image.
     :param img: an image to which to calculate the histogram.
     :param channel: a 1-element list
-    :return tuple of array
+    :return tuple of array.
         (hist_gs_or_red, hist_green, hist_blue) indicating the histogram along each color channel
     """
 
@@ -16,7 +16,7 @@ def calculate_histogram(img, channel):
     hist_blue = np.zeros((256, 1), dtype=np.int32)
 
     # Calculate the histogram for red channel for RGB images
-    # or the the first channel for gray-scale images.
+    # or the the first channel for gray-scale of shape (M, N, 1) images.
     if channel == [0]:
         # one-dimensional array
         if img.ndim == 1:

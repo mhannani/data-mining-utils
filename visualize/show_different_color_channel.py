@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 def show_different_color_channel(path_img):
     """
     Plot different color channel of the given image.
+    :param path_img: path of the image or the array of the image.
+    :return None.
     """
 
     colors = ['red', 'green', 'blue']
