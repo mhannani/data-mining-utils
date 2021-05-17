@@ -11,7 +11,7 @@ def tr_color_2_bi_img(f_img, threshold):
     by leveraging each pixel of three values(RGB: red-green-blue) using ITU-R BT.601 conversion and each pixel
     will be represented as y = R * 299/1000 + G * 587/1000 + B * 114/1000.
     the first step is done by using the implemented function `tr_color_2_bi_img`, the remaining step
-    is to leverage the value of each pixel to either 0 or 1 to represent the image as gray-scale.
+    is to leverage the value of each pixel to either 0 or 1 to represent the image as binary representation.
 
     :param f_img: an array-like
         The path, python lit or np.ndarray of the image to convert to gray-scale one.
