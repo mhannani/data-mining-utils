@@ -6,5 +6,6 @@ def sum_over_columns(arr):
     :return: An_array
         1D-array of the summed columns
     """
+
     array_sum_columns = arr.sum(axis=0)
     return array_sum_columns
