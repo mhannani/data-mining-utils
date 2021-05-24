@@ -1,4 +1,4 @@
-def sum_over_columns(arr):
+def calculate_gamma_of_array(arr):
     """
     Calculate the sum over columns in a 2D-array.
     :param arr: array_like
@@ -7,5 +7,5 @@ def sum_over_columns(arr):
         1D-array of the summed columns
     """
 
-    array_sum_columns = arr.sum(axis=0)
-    return array_sum_columns
+    gamma_of_arr = arr.sum(axis=0)
+    return gamma_of_arr
