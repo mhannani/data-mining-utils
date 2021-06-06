@@ -13,4 +13,4 @@ def show_some_images(imgs):
 
     for i in range(14):
         ax = fig.add_subplot(2, 7, i+1)
-        ax.imshow(imgs[i])
+        ax.imshow(imgs[i], cmap='gray')

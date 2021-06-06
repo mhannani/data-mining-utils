@@ -7,5 +7,17 @@ def calculate_gamma_of_array(arr):
         1D-array of the summed columns
     """
 
-    gamma_of_arr = arr.sum(axis=0)
-    return gamma_of_arr
+    sum_of_gammas = arr.sum(axis=0)
+    return sum_of_gammas
+
+
+def gamma(arr):
+    """
+    Takes an image and return a vector.
+    :param arr: array_like
+        An image as numpy_array.
+    :return: array_like
+        1D_array
+    """
+
+    return arr.flatten()

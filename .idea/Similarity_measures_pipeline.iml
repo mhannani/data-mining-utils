@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/Machine learning workflows/Cifar10_image_classification/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/distance/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/correlation/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/chartify/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/images/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/similarity/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/Faciale recognition/.ipynb_checkpoints" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.8 (tf-gpu)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PackageRequirementsSettings">
+    <option name="removeUnused" value="true" />
+    <option name="modifyBaseFiles" value="true" />
+  </component>
+  <component name="PyDocumentationSettings">
+    <option name="renderExternalDocumentation" value="true" />
+  </component>
+</module>
