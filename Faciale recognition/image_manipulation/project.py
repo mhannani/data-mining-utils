@@ -30,7 +30,7 @@ def project_imgs(imgs, components):
 
     weights = np.zeros((len(imgs), len(components)))
 
-    for img in range(imgs):
+    for img in imgs:
         np.append(weights, project_img(img, components))
 
     return weights

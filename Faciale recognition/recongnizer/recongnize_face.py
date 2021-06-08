@@ -15,14 +15,14 @@ def recognize_face(img, imgs, components, n_faces=3):
     :param imgs: array_like
         The dataset of faces
     :return: array_like
-        `n_faces` similar faces.
+        `n_faces` index of similar faces.
     """
 
     distance = np.empty(shape=[len(imgs)])
     weight_face = project_img(img, components)
     weights = project_imgs(imgs, components)
 
-    for weight in range(weights):
+    for weight in weights:
         delta = weight - weight_face
         np.append(distance, sum(abs(delta)))
 
@@ -31,6 +31,7 @@ def recognize_face(img, imgs, components, n_faces=3):
 
     for i in range(n_faces):
         ax = fig.add_subplot(1, 3, i + 1)
-        ax.imshow(imgs[i], cmap='gray')
+        ax.imshow(imgs[i].reshape(64, 64), cmap='gray')
 
+    # index of similar image with smallest difference.
     return distance.argsort()[:n_faces]
